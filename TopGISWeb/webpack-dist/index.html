@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+  <title>企业级GIS平台</title>
+  <link rel="shortcut icon" href="../images/shortcut.ico">
+  <link href="resource/css/main.css" type="text/css" rel="stylesheet">
+  <link href="resource/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="resource/css/animate.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="resource/jquery/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="resource/jquery/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="configs/loading/loading.css" />
+<link href="./dist/css/vendor.f493198b.css" rel="stylesheet"><link href="./dist/css/index.css" rel="stylesheet"></head>
+
+<body class="claro jimu-main-font">
+  <div id="main-loading" style="display:none">
+    <div id="app-loading"></div>
+    <div id="loading-gif"></div>
+    <!-- //////////////////    END    ////////////////////////////// -->
+    <div id="ie-note" style="display:none;">
+      <div class="hint-title">Error</div>
+      <div class="hint-img">Your browser is currently not supported.</div>
+      <p class="hint-text">
+        <span>
+          Please note that creating presentations is not supported in Internet Explorer versions 6, 7.
+        </span>
+        <br>
+        <span>
+          We recommend upgrading to the latest Internet Explorer, Google Chrome, or Firefox.
+        </span>
+        <br>
+        <span>
+          If you are using IE 8 or later, make sure you turn off "Compatibility View".
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="mainbody">
+    <div class="popUp animated slideInLeft ">
+      <div class="title">
+        <i class="fa fa-tags"></i>
+        <span>图层管理</span>
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="popBody">
+        <div class="treetabtitle">
+        </div>
+        <div class="childTabBox">
+        </div>
+      </div>
+    </div>
+    <div id="main-page" style="width:100vw; height:100vh; background-size:cover;">
+      <div id="jimu-layout-manager"></div>
+    </div>
+  </div>
+  <div id="table-test"
+    style="width:600px;position:fixed;right:10px;top:10px;background: rgba(0,0,0);padding: 40px 10px 10px 10px">
+
+  </div>
+  <script>
+    function GetQueryString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg); //search,查询？后面的参数，并匹配正则
+      if (r != null) return unescape(r[2]);
+      return null;
+    }
+    window.usercode = GetQueryString("userCode")
+  </script>
+  <script src="resource/js/env.js"></script>
+  <script type="text/javascript" src="resource/js/simpleLoader.js"></script>
+  <script type="text/javascript" src="resource/js/init.js"></script>
+<script type="text/javascript" src="./dist/js/vendor.f493198b.js"></script><script type="text/javascript" src="./dist/js/index.build.js"></script></body>
+
+</html>

@@ -1,0 +1,129 @@
+.nokia-ml-searchbar {
+  width: 300px;
+  display: inline-block;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 998
+}
+
+.nokia-ml-search-box {}
+
+.nokia-ml-search-box>.btni {
+  padding: 14px 19px;
+  float: left;
+  background: #4E81FB;
+  font-size: 20px;
+  margin-right: 10px;
+
+  color: #fff;
+}
+
+.nokia-ml-search-box>.mnul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fff
+}
+
+.nokia-ml-search-box>.mnul i {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.nokia-ml-search-box>.mnul .i1 {
+  background: #4E81FB;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.nokia-ml-search-box>.mnul .i3 {
+  padding: 5px 15px;
+  border-left: 1px solid #eee
+}
+
+.nokia-ml-search-box>.mnul .sinput {
+  width: 140px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 15px
+}
+
+.nokia-ml-search-box>.list-ul {
+  background: #eeeeee;
+  box-shadow: 0px 1px 4px #ddd inset;
+  max-height: calc(100vh - 190px);
+  overflow-y: scroll
+}
+
+.nokia-ml-search-box>.list-ul>li {
+  padding: 4px 10px 4px 20px;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nokia-ml-search-box>.list-ul>li:hover {
+  background-color: #dbd8d8
+}
+
+.nokia-ml-search-box>.list-ul>.li-search1 {
+  color: #828181;
+  font-size: 12px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nokia-ml-search-box>.list-ul>.li-search1>div>span:first-child {
+  color: #6E97F8
+}
+
+.nokia-ml-search-box>.result-btn {
+  background-color: #6E97F8;
+  color: #fff;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.nokia-ml-search-box>.result-btn>i {
+  font-size: 12px;
+  padding: 0 18px;
+}
+
+.nokia-ml-search-box>.result-btn>input {
+  background-color: #6E97F8;
+  color: #fff;
+  letter-spacing: 3px
+}
+
+.nokia-ml-search-box-more {
+  border: 1px solid transparent;
+  background: #fff;
+}
+
+.nokia-ml-search-box-more>ul>li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px 10px 20px;
+  align-items: center;
+}
+
+.nokia-ml-search-box-more>ul>.li-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nokia-ml-search-box-more>ul>li input[type="radio"] {
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+}

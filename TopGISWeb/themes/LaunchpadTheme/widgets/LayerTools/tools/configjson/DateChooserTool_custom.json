@@ -1,0 +1,15 @@
+﻿{
+  "type": "DateChooserTool",
+  "visible": "true",
+  "options": {
+    "optionType": "custom",
+    "selectId": "selectid",
+    "label": "日期选择",
+    "customFunction": "changeGSMSxDate",
+    "defaultDate": "{today}-2",
+    "isgo": false,
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

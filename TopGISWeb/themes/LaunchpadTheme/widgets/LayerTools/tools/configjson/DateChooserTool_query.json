@@ -1,0 +1,13 @@
+﻿{
+  "type": "DateChooserTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "形式选择",
+    "defaultDate": "{lastyear}-2",
+    "DateFieldName": "TIME_STAMP",
+    "orderid": 1,
+    "groupid": 0
+  },
+  "toolid": 0
+}

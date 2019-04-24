@@ -1,0 +1,149 @@
+/****树形菜单*****/
+
+.hr-h {
+  height: 0;
+  border-bottom: 1.5px dotted #828181;
+  width: 20px;
+}
+
+.hr-s {
+  width: 0;
+  border-left: 1.5px dotted #828181;
+  height: 36px;
+  position: absolute;
+  left: 10px;
+  top: -18px;
+}
+
+.tree-title {
+  display: flex;
+  background: #eee
+}
+
+.tree-title>li {
+  text-align: center;
+  flex-grow: 1
+}
+
+.tree-title>li>a {
+  display: block;
+  padding: 12px 0;
+  color: #525252;
+  font-size: 13px;
+  font-weight: 600;
+  /* letter-spacing: 2px; */
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+  cursor: default
+}
+
+
+.tree-title .active {
+  color: #3482ff;
+  background: #fff;
+}
+
+.tree-list {
+  width: 100%;
+  padding: 0;
+  /*  overflow: hidden;
+  overflow-y: auto; */
+  margin: 0 auto;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: none;
+  height: 100%;
+  position: relative;
+}
+
+.tree-list>li {
+  padding-left: 10px;
+  position: relative;
+}
+
+.tree-list>.child-li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tree-list>li>a {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  padding: 8px 18px;
+  padding-left: 0px;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+  cursor: default
+}
+
+.tree-list>.tre-first-father {
+  padding-left: 20px;
+}
+
+.tree-list>li>.father {}
+
+/*选择框checkbox */
+.tree-list>li>a>.checkbox {
+  position: relative;
+}
+
+.tree-list>li>a>.checkbox>input {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tree-list>li>a>.checkbox>i {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: #efefef;
+  vertical-align: text-bottom;
+  border-radius: 2px;
+  margin-right: 5px
+}
+
+.tree-list>li>a>.checkbox>.i-border {
+  border: 1px solid #979797;
+}
+
+.tree-list>li>a>.checkbox>.icheckd::after {
+  content: "";
+  color: #fff;
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  margin-top: 2px;
+  margin-left: 3px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.tree-list>li>a>i {
+  vertical-align: middle;
+  padding-right: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 999;
+  background: #fff
+}
+
+.tree-list .ch-item {
+  padding-left: 30px;
+}
+
+.tree-list .ch-item2 {
+  padding-left: 40px;
+}
+
+.tree-list .active {
+  color: #1e3fe9;
+  background: #3d4271
+}

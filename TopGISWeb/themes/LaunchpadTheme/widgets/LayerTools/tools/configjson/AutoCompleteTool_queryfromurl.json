@@ -1,0 +1,16 @@
+﻿{
+  "type": "AutoCompleteTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "形式选择",
+    "fieldName": "WS_NAME",
+    "hasQuotationMark": true,
+    "tagsurl":  "http://localhost:1877/api/getoptions?id=1",
+    "textValue": "农村",
+    "placeholder": "请输入表名...",
+    "orderid": 1,
+    "groupid": 0
+  },
+  "toolid": 0
+}

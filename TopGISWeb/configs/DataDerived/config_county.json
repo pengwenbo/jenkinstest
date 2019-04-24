@@ -1,0 +1,29 @@
+﻿{
+  "clickevent": "activateDrawToolRegion",
+  "type": "COUNTY",
+  "serverUrl": {
+    "CITY": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/CITY/MapServer",
+    "COUNTY": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/COUNTY/MapServer",
+    "TOWN": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/TOWN/MapServer",
+    "GRID": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/GRID/MapServer",
+    "TEST_GRID": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/TEST_GRID/MapServer",
+    "CHENGQU_GRID": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/CHENGQU_GRID/MapServer",
+    "FJXZC": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/FJXZC/MapServer",
+    "SCHOOL": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/SCHOOL/MapServer",
+    "SHANGQUAN": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/SHANGQUAN/MapServer",
+    "JMXQ": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/JMXQ/MapServer",
+    "DXQY": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/DXQY/MapServer",
+    "LYJD": "../proxy_to_92/enterprise_gis/arcgis/rest/services/BaseMapServer/LYJD/MapServer",
+    "YIYUAN": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/YiYuan/MapServer",
+    "JIAOTONG": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/JiaoTong/MapServer",
+    "BINGUAN": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/BINGUAN/MapServer",
+    "FJCZC": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/FJCZC/MapServer",
+    "FJDZJ": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/FJDZJ/MapServer",
+    "CYYQ": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/CYYQ/MapServer",
+    "ZYSC": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/ZYSC/MapServer",
+    "ZDJG": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/ZDJG/MapServer",
+    "GGCS": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/GGCS/MapServer",
+    "SWLY": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/SWLY/MapServer",
+    "QSHX": "../proxy_to_92/enterprise_gis/arcgis/rest/services/WangYou/GIS_QSHX_PY/MapServer"
+  }
+}

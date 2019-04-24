@@ -1,0 +1,31 @@
+﻿{
+  "type": "SubmitButtonTool",
+  "visible": "true",
+  "options": {
+    "optionType": "submit",
+    "label": "渲染",
+    "highlightrenderer": {
+    "type": "simple",
+    "label": "",
+    "description": "",
+    "symbol": {
+      "color": [210,105,30,191],
+      "size": 26,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriSMS",
+      "style": "esriSMSCircle",
+      "outline": {
+        "color": [0,0,128,255],
+        "width": 0,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    }
+  }, 
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 3
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE >
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>集客栅格二维</title>
+  <!-- <link rel="stylesheet" type="text/css" href="/arcgis_js_api/library/3.25/esri/css/esri.css" /> -->
+  <link rel="stylesheet" href="http://221.182.241.179:85/arcgis_js_api/library/3.25/dijit/themes/claro/claro.css">
+  <link rel="stylesheet" href="http://221.182.241.179:85/arcgis_js_api/library/3.25/esri/css/esri.css">
+  <style>
+    #map {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+
+  <script>
+    var dojoConfig = {
+      server: "221.182.241.179:85"
+    }
+  </script>
+  <!-- <script type="text/javascript" src="/arcgis_js_api/library/3.25/init.js"></script> -->
+  <script src="http://221.182.241.179:85/arcgis_js_api/library/3.25/init.js"></script>
+  <script type="text/javascript">
+    var map;
+    require([
+      "esri/map",
+      "esri/layers/ArcGISDynamicMapServiceLayer",
+      "esri/layers/ArcGISTiledMapServiceLayer",
+      "esri/layers/FeatureLayer",
+      "esri/InfoTemplate",
+      'esri/symbols/PictureMarkerSymbol',
+      "esri/geometry/Extent",
+      "dojo/domReady!"
+    ], function (
+      Map,
+      ArcGISDynamicMapServiceLayer,
+      ArcGISTiledMapServiceLayer,
+      FeatureLayer,
+      InfoTemplate,
+      PictureMarkerSymbol,
+      Extent
+    ) {
+        var mapExtent = new Extent({
+          xmax: 110.4372831869446,
+          xmin: 110.14550416056568,
+          ymax: 20.09132053413222,
+          ymin: 19.947106161490854,
+          spatialReference: {
+            wkid: 4326
+          }
+        })
+        map = new Map("map", {
+          extent: mapExtent,
+          sliderStyle: "small",
+          logo: false
+        });
+
+        var imageTileLayer = new ArcGISTiledMapServiceLayer("http://221.182.241.179:85/arcgis_digitalmap2/rest/services/basemapImage/HaiNanImage/MapServer");
+        map.addLayer(imageTileLayer)
+
+        //map.setInfoWindowOnClick(true);
+
+        var JTKH_GRIDtemp = "栅格名称: ${GRID_NAME}<br>栅格编号: ${GRID_ID}<br>白天常驻用户: ${USER_CHANGZHU_DAY}<br>夜间常驻用户: ${USER_CHANGZHU_NIGHT}<br>白天ARPU值: ${ARPU}<br>夜间ARPU值: ${ARPU_NIGHT}<br>目标地标数: ${POI_NUM}<br>楼宇数: ${LOUYU_NUM}<br>集团客户数: ${JIKE_USER_NUM}<br>集客标签: ${GRID_TYPE}"
+        var JTKH_GRIDInfoTemplate = new InfoTemplate("详细", JTKH_GRIDtemp);
+        var JTKH_GRID = new ArcGISDynamicMapServiceLayer('http://221.182.241.179:85/arcgis/rest/services/JTKH/JTKH_GRID/MapServer', {
+          // infoTemplates: {
+          //   0: {
+          //     infoTemplate: JTKH_GRIDInfoTemplate
+          //   },
+          //   1: {
+          //     infoTemplate: JTKH_GRIDInfoTemplate
+          //   },
+          //   2: {
+          //     infoTemplate: JTKH_GRIDInfoTemplate
+          //   },
+          //   3: {
+          //     infoTemplate: JTKH_GRIDInfoTemplate
+          //   }
+          // },
+          outFields: ['*'],
+          visible: false,
+          opacity: 0.8
+        })
+        map.addLayer(JTKH_GRID);
+        //JTKH_GRID.hide();
+
+
+        var JTKH_FAULT1 = new FeatureLayer('http://221.182.241.179:85/arcgis/rest/services/JTKH/JTKH_GRID/MapServer/0', {
+          outFields: ['*'],
+          visible: false,
+          opacity: 0.8
+        })
+        console.log(JTKH_FAULT1);
+
+        //集客专线
+        var JTKH_ZXtemp = "入库时间: ${INSERT_TIME}<br>产品实例标识: ${INSTANCE_NUMBER}<br>专线名称: ${LINE_NAME}<br>入库时间: ${INSERT_TIME}<br>专线类型: ${LINE_TYPE}<br>设备安装地址: ${INSTALL_ADDRESS}"
+        var JTKH_ZXInfoTemplate = new InfoTemplate("客专线", JTKH_ZXtemp);
+        var JTKH_ZX = new ArcGISDynamicMapServiceLayer('http://221.182.241.179:85/arcgis/rest/services/JTKH/JTKH_ZX/MapServer', {
+          infoTemplates: { 0: { infoTemplate: JTKH_ZXInfoTemplate } },
+          outFields: ['*'],
+          visible: true,
+          opacity: 0.8
+        })
+        map.addLayer(JTKH_ZX);
+
+
+        var JTKH_FAULT = new FeatureLayer('http://221.182.241.179:85/arcgis/rest/services/JTKH/JTKH_FAULT/MapServer/0', {
+          outFields: ['*'],
+          visible: false,
+          opacity: 0.8
+        })
+        var symbol = new PictureMarkerSymbol("loading.gif", 25, 25).setOffset(0, 0);
+        var renderer = new esri.renderer.SimpleRenderer(symbol);
+        JTKH_FAULT.setRenderer(renderer);
+        map.addLayer(JTKH_FAULT);
+        //JTKH_FAULT.hide();
+
+        // !!!!!JTKH_ODF 唯一编码 没有值 !!!!!!!!!!!
+        //集客ODF 
+        var JTKH_ODFtemp = "入库时间: ${INSERT_TIME}<br>机房ID: ${ROOM_ID}<br>机房名称: ${ROOM_NAME}<br>创建时间: ${create_time}<br>唯一编码: ${ONLY_ID}<br>ODM数量: ${ODM_NUM}<br>光缆数量: ${OPTICAL_CABLE_NUM}<br>总端口数: ${ALL_PORT_NUM}<br>已用端口数: ${USED_PORT_NUM}"
+        var JTKH_ODFInfoTemplate = new InfoTemplate("集客ODF", JTKH_ODFtemp);
+        var JTKH_ODF = new ArcGISDynamicMapServiceLayer('http://221.182.241.179:85/arcgis/rest/services/JTKH/JTKH_ODF/MapServer', {
+          infoTemplates: { 0: { infoTemplate: JTKH_ODFInfoTemplate } },
+          outFields: ['*'],
+          visible: false,
+          opacity: 0.8
+        })
+        map.addLayer(JTKH_ODF);
+
+        //集客光缆交接
+        var JTKH_GLJJtemp = "入库时间: ${INSERT_TIME}<br>光交ID: ${OPTICAL_CABLE_ID}<br>光交名称: ${OPTICAL_CABLE_NAME}<br>竣工日期: ${Completion_date}<br>唯一编码: ${ONLY_ID}<br>ODM数量: ${ODM_NUM}<br>光缆数量: ${OPTICAL_CABLE_NUM}<br>总端口数: ${ALL_PORT_NUM}<br>已用端口数: ${USED_PORT_NUM}"
+        var JTKH_GLJJInfoTemplate = new InfoTemplate("集客光缆交接", JTKH_GLJJtemp);
+        var JTKH_GLJJ = new ArcGISDynamicMapServiceLayer('http://221.182.241.179:85/arcgis/rest/services/JTKH/JTKH_GLJJ/MapServer', {
+          infoTemplates: { 0: { infoTemplate: JTKH_GLJJInfoTemplate } },
+          outFields: ['*'],
+          visible: false,
+          opacity: 0.8
+        })
+        map.addLayer(JTKH_GLJJ);
+
+
+        //集客POI
+        var JTKH_POItemp = "名称: ${NAME}<br>地址: ${ADDRESS}<br>类型: ${TYPE}<br>城市: ${CITY}"
+        var JTKH_POIInfoTemplate = new InfoTemplate("集客POI", JTKH_POItemp);
+        var JTKH_POI = new ArcGISDynamicMapServiceLayer('http://221.182.241.179:85/arcgis/rest/services/JTKH/JTKH_POI/MapServer', {
+          infoTemplates: { 0: { infoTemplate: JTKH_POIInfoTemplate } },
+          outFields: ['*'],
+          visible: false,
+          opacity: 0.8
+        })
+        map.addLayer(JTKH_POI);
+        //JTKH_POI.hide(
+      });
+  </script>
+</head>
+
+<body>
+  <div id="map">
+  </div>
+</body>
+
+</html>

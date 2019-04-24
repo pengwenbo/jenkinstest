@@ -1,0 +1,13 @@
+﻿{
+  "type": "SelectTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "数据来源：",
+    "optionshtml": "<option  value=\"HONEYCOMB_TYPE='不限'\"  >不限</option><option  value=\"HONEYCOMB_TYPE='主动测试'\" >主动测试</option><option  value=\"HONEYCOMB_TYPE='被动测试'\" >被动测试</option><option  value=\"HONEYCOMB_TYPE='定点测试'\" >定点测试</option>",
+    "workspaceId": "AppOracle",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

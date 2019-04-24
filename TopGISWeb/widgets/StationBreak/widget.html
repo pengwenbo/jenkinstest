@@ -1,0 +1,23 @@
+<div style="width:100%;height:100%;overflow-y:auto;">
+    <div>
+        <table data-dojo-attach-point="actionButtonsContainer" cellspacing="0" class="tblActionContainer">
+            <tr>
+                <td style="padding-left: 0px;width:200px" class="tdCSVButton">
+                    <label>断站时间:</label>
+                    <input type="datetime-local" value="2019-01-14T00:00" data-dojo-attach-point="breakDateChooser" />
+                </td>
+                <td style="padding-left: 0px;width:100px" class="tdCSVButton">
+                    <input type="file" id="csvFileInput" data-dojo-attach-point="csvFileInput" style="display: none"
+                           data-dojo-attach-event="change:fileSelected" accept=".csv,.xls,.xlsx,.xlt,.xltx,.xlsm">
+
+                    <div class="jimu-btn" data-dojo-attach-point="showFileDialogBtn"
+                         data-dojo-attach-event="click:showFileDialog">${nls.selectCSV}
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div data-dojo-attach-point="loadingNode" class="loading"></div>
+        <a id="data_sample" style="color: blue;position: absolute;right:0;bottom:0
+			;" href="./widgets/StationBreak/data/断站ECI模板.xlsx" tooltip="模板下载" target="_blank">模板下载</a>
+    </div>
+</div>

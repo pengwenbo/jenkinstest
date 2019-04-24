@@ -1,0 +1,22 @@
+{
+  "name": "DataDerived",
+  "platform": "HTML",
+  "version": "2.4",
+  "wabVersion": "2.4",
+  "author": "NOKIA & Neusoft",
+  "description": "",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "inPanel": false,
+    "hasStyle": false,
+    "hasUIFile": false,
+    "keepConfigAfterMapSwithched": false,
+    "supportMultiInstance": false,
+    "hasVersionManager": false,
+    "hasSettingPage": true,
+    "hasSettingUIFile": true,
+    "hasSettingLocale": true,
+    "hasSettingStyle": true
+  }
+}

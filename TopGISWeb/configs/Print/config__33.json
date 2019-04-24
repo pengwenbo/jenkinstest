@@ -1,0 +1,9 @@
+{
+  "serviceURL": "https://portal.gis2yun.com:6443/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+  "defaultTitle": "ArcGIS Web Map",
+  "defaultAuthor": "Web AppBuilder for ArcGIS",
+  "defaultCopyright": "",
+  "defaultFormat": "PNG32",
+  "defaultLayout": "MAP_ONLY",
+  "copyrightEditable": true
+}

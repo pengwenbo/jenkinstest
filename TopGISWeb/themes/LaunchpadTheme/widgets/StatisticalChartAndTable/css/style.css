@@ -1,0 +1,48 @@
+.jimu-widget-StatisticalChartAndTable {
+  background-color: #555;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.jimu-widget-StatisticalChartAndTable .hide {
+  display: none !important;
+}
+
+.telescopic {
+  transition: all 0.5s;
+}
+
+.jimu-widget-StatisticalChartAndTable .telescopic {
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    width: 900px;
+    height: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 999;
+  }
+
+  
+.jimu-widget-StatisticalChartAndTable .telescopic .hide {
+  display: none !important;
+}
+
+.jimu-widget-StatisticalChartAndTable .move{
+    display: flex;
+    position: absolute;
+    left: -27px;
+    top: 20px;
+    width: 27px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background: #007AD7;
+    cursor: pointer;
+
+  }
+.jimu-widget-StatisticalChartAndTable .move>i {
+    display: inline-block;
+    color: #ffffff;
+  }
+

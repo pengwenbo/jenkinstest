@@ -1,0 +1,68 @@
+.gisIconNav {
+    width: 300px;
+    height: 34px;
+    padding-left: 10px;
+    margin: 0 88px 0 0;
+}
+
+.gisIconNav a, .gisIconNav a:visited, .gisWholeZoom a, .gisWholeZoom a:visited {
+    display: inline-block;
+    width: auto;
+    height: 27px;
+    font: 12px/27px Verdana, Geneva, sans-serif;
+    white-space: nowrap;
+    background: none;
+    margin: 1px 0px;
+    padding: 4px 1px 0;
+    float: left;
+}
+.gisIconNav a span, .gisWholeZoom a span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/gisTools.png) no-repeat;
+    float: left;
+}
+.gisIconNav a span.togBg {
+    background-image: url(../images/gisToolsHv.png);
+}
+.gisIconNav a:hover, a:active, a:focus {
+    color: rgba(13, 10, 6, 0.44);
+    text-decoration: underline;
+}
+.gisIconNav a:visited {
+    color: #444444;
+}
+.gisIconNav a span.gistool06 {background-position: 0px -249px;  }
+.gisIconNav a span.gistool07 { background-position: 0px -300px; }
+.gisIconNav a span.gistool19 { background-position: -102px -500px; }
+.gisIconNav a span.gistool54 { background-position: -103px -1498px; }
+.gisIconNav a span.gistool55 { background-position: -103px -948px; }
+
+.gisIconNav a span.gistool25 { background-position: 0px -747px; }
+.gisIconNav a span.gistool26 { background-position: 0px -798px; }
+.gisIconNav a span.gistool30 { background-position: 1px -898px; }
+
+
+.gisIconNav a span.gistool27 { background-position: -102px -798px; }
+.gisIconNav a span.gistool28 { background-position: 2px -848px; }
+.gisIconNav a span.gistool29 { background-position: -102px -848px; }
+.gisIconNav a span.gistool33 { background-position: 0px -998px; }
+.gisIconNav a span.gistool34 { background-position: -103px -998px; }
+.gisIconNav a span.gistool37 { background-position: 1px -1098px; }
+.gisIconNav a span.gistool38 { background-position: -102px -1098px; }
+.gisIconNav a span.gistool39 { background-position: 1px -1149px; }
+.gisIconNav a span.gistool40 { background-position: -103px -1149px; }
+.gisIconNav a span.gistool41 { background-position: 1px -1198px; }
+.gisIconNav a span.gistool42 { background-position: -103px -1198px; }
+.gisIconNav a span.gistool44 { background-position: -103px -1249px; }
+.gisIconNav a span.gistool45 { background-position: 1px -1298px; }
+.gisIconNav a span.gistool46 { background-position: -103px -1298px; }
+.gisIconNav a span.gistool47 { background-position: 1px -1349px; }
+.gisIconNav a span.gistool48 { background-position: -103px -1349px; }
+.gisIconNav a span.gistool49 { background-position: 1px -1398px; }
+.gisIconNav a span.gistool50 { background-position: -103px -1398px; }
+.gisIconNav a span.gistool51 { background-position: 1px -1449px; }
+.gisIconNav a span.gistool52 { background-position: -103px -1449px; }
+
+.gisIconNav a span.gistool22R {background-position: -102px -749px;}

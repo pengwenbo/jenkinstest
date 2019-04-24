@@ -1,0 +1,13 @@
+﻿{
+  "type": "MutiSelectTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "室内外选择",
+    "optionshtml":"<option  value='SCENE=\"公园\"'  >公园</option><option  value='SCENE=\"学校\"' >学校</option><option  value='SCENE=\"商场\"' >商场</option><option  value='SCENE=\"住宅\"' >住宅</option><option  value='SCENE=\"村庄\"' >村庄</option><option  value='SCENE=\"郊区\"' >郊区</option>", 
+    "workspaceId": "MyWorkspace177",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

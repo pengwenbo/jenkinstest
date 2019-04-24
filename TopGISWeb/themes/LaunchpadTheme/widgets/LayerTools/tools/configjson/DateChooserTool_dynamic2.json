@@ -1,0 +1,14 @@
+﻿{
+  "type": "DateChooserTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamic",
+    "label": "日期选择",
+    "table_pre": "GIS_LTE_SITE_KPI_PNT",
+    "defaultDate": "{today}-2",
+    "workspaceId": "Data_Center_FJ",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

@@ -1,0 +1,14 @@
+﻿{
+  "type": "MutiCheckBoxTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamic",
+    "label": "形式选择",
+    "table_pre": "GIS_OBJECT_GSM",
+    "checkboxes": [ {"label": "扇形","value": "SECTOR","orderid": 1,"checked": true},{"label": "泰森多边形","value": "THIESS","orderid": 0  },{"label": "圆形","value": "CIRCLE" ,"orderid": 2 } ],
+    "workspaceId": "MyWorkspace177",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

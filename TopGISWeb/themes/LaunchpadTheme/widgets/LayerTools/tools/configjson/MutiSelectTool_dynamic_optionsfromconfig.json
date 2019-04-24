@@ -1,0 +1,14 @@
+﻿{
+  "type": "MutiSelectTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamic",
+    "table_pre":"GIS_OBJECT_LTE",
+    "label": "形式选择",
+    "optionshtml":"<option  value='SX'  >扇形</option><option  value='THIESS' >泰森多边形</option><option  value='CIRCLE' >圆形</option>", 
+    "workspaceId": "MyWorkspace177",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

@@ -1,0 +1,16 @@
+﻿{
+  "type": "AutoCompleteTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "形式选择",
+    "fieldName": "WS_NAME",
+    "hasQuotationMark": true,
+    "tagsdata": ["123","234","345","1234","2345","3456","12345","23456","34567" ],
+    "textValue": "农村",
+    "placeholder": "请输入表名...",
+    "orderid": 1,
+    "groupid": 0
+  },
+  "toolid": 0
+}

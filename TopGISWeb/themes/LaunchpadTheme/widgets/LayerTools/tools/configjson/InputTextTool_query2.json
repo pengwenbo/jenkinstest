@@ -1,0 +1,13 @@
+﻿{
+  "type": "InputTextTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "形式选择",
+    "textValue": "STATUS = 1",
+    "placeholder": "请输入表名...",
+    "orderid": 1,
+    "groupid": 0
+  },
+  "toolid": 0
+}

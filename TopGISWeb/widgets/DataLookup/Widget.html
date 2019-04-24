@@ -1,0 +1,336 @@
+<div style="width:100%;height:100%;overflow-y:auto;">
+    <div class="widgetDescription" data-dojo-attach-point="widgetDescription"></div>
+    <div>
+        <div class="titDiv" data-dojo-attach-point="">导入类型:</div>
+        <div class="conDiv_weight" data-dojo-attach-point="">
+            <input type="radio" name="choiceType" id="baseed_FeatureMap" data-dojo-attach-point="baseed_FeatureMap"
+                   checked
+                   data-dojo-attach-event="click:choose_Import_Type"/><label>要素</label>
+            <input type="radio" name="choiceType" id="baseed_PlotMap" data-dojo-attach-point="baseed_PlotMap"
+                   data-dojo-attach-event="click:choose_Import_Type"/><label>小区</label>
+            <input type="radio" name="choiceType" id="baseed_GridMap" data-dojo-attach-point="baseed_GridMap"
+                   data-dojo-attach-event="click:choose_Import_Type"/><label>栅格</label>
+            <input type="radio" name="choiceType" id="baseed_KmlMap" data-dojo-attach-point="baseed_KmlMap"
+                   data-dojo-attach-event="click:choose_Import_Type" /><label>KML</label>
+        </div>
+    </div>
+    <div>
+        <div class="optionStyle" style="display: none">
+            <input type="checkbox" id="chkboxPlotOnly"
+                   data-dojo-attach-point="chkboxPlotOnly"><label>${nls.plotOnly}</label>
+        </div>
+    </div>
+    <div style="display:none;">
+        <div class="titDiv">${nls.projectionChoice}</div>
+        <div class="conDiv_weight">
+            <input type="radio" name="rdProjection" id="rdProjectionLat"
+                   data-dojo-attach-point="rdProjection" value="latlon_4326" checked><label>${nls.projectionLat}</label>
+        </div>
+    </div>
+    <!--将列属性解析进来-->
+    <!--要素类-->
+    <div style="display: block" id="feature_type">
+        <!--WIKID-->
+        <div>
+            <div class="titDiv">WIKID：</div>
+            <div>
+                <select data-dojo-attach-point="WIKID_Value">
+                    <option>经纬度</option>
+                </select>
+            </div>
+        </div>
+        <!--经度列-->
+        <div>
+            <div class="titDiv">经度列：</div>
+            <div>
+                <select data-dojo-attach-point="LonValue">
+                </select>
+            </div>
+        </div>
+        <!--纬度列-->
+        <div>
+            <div class="titDiv">纬度列：</div>
+            <div>
+                <select data-dojo-attach-point="LatValue">
+                </select>
+            </div>
+        </div>
+        <!--标题列-->
+        <div>
+            <div class="titDiv">标题列：</div>
+            <div>
+                <select data-dojo-attach-point="TitleValue">
+                </select>
+            </div>
+        </div>
+        <!--要素类的类型选择-->
+        <div>
+            <div>
+                <label class="titDiv">${nls.mapChoice}</label>
+            </div>
+            <div class="conDiv_weight">
+                <input type="radio" name="choose_feature_Map" id="normal_feature" data-dojo-attach-point="normal_feature" checked
+                       data-dojo-attach-event="click:choose_feature_click"><label>普通图</label>
+                <input type="radio" name="choose_feature_Map" id="together_feature" data-dojo-attach-point="together_feature"
+                       data-dojo-attach-event="click:choose_feature_click"><label>聚合图</label>
+                <input type="radio" name="choose_feature_Map" id="heat_feature" data-dojo-attach-point="heat_feature"
+                       data-dojo-attach-event="click:choose_feature_click"><label>热力图</label>
+                <input type="radio" name="choose_feature_Map" id="grid_feature" data-dojo-attach-point="grid_feature"
+                       data-dojo-attach-event="click:choose_feature_click"><label>网格图</label>
+            </div>
+        </div>
+    </div>
+    <!--小区类-->
+    <div style="display: none" id="plot_type">
+        <!--小区类型-->
+        <div>
+            <div class="titDiv" data-dojo-attach-point="">小区类型:</div>
+            <div class="conDiv_weight" data-dojo-attach-point="">
+                <input type="radio" name="plotType" id="baseed_GSM_Map" data-dojo-attach-point="baseed_GSM_Map"
+                       checked
+                       data-dojo-attach-event="click:depend_cifiled_url"/><label>GSM</label>
+                <input type="radio" name="plotType" id="baseed_TD_Map" data-dojo-attach-point="baseed_TD_Map"
+                       data-dojo-attach-event="click:depend_cifiled_url"/><label>TD</label>
+                <input type="radio" name="plotType" id="baseed_LTE_Map" data-dojo-attach-point="baseed_LTE_Map"
+                       data-dojo-attach-event="click:depend_cifiled_url"/><label>LTE</label>
+            </div>
+        </div>
+        <!--CI列-->
+        <div>
+            <div class="titDiv">CI列：</div>
+            <div>
+                <select data-dojo-attach-point="CI_Value">
+                </select>
+            </div>
+        </div>
+        <!--地市列-->
+        <div>
+            <div class="titDiv">地市列：</div>
+            <div>
+                <select data-dojo-attach-point="CITY_Value">
+                </select>
+            </div>
+        </div>
+        <!--标题列-->
+        <div>
+            <div class="titDiv">标题列：</div>
+            <div>
+                <select data-dojo-attach-point="TITLE_Value">
+                </select>
+            </div>
+        </div>
+        <!--渲染类型列-->
+        <div style="display:none">
+            <div>
+                <label class="titDiv">渲染类型：</label>
+            </div>
+            <div class="conDiv_weight">
+                <input type="radio" name="randerer_type" id="sector_pic" data-dojo-attach-point="sector_pic" checked
+                       data-dojo-attach-event=""><label>扇形图</label>
+                <input type="radio" name="randerer_type" id="taisen_pic" data-dojo-attach-point="taisen_pic"
+                       data-dojo-attach-event=""><label>泰森多边形图</label>
+            </div>
+        </div>
+    </div>
+    <!--栅格类-->
+    <div style="display: none" id="grid_list">
+        <!--MGRS-->
+        <div>
+            <div class="titDiv">MGRS：</div>
+            <div>
+                <select data-dojo-attach-point="MGRS_Value">
+                </select>
+            </div>
+        </div>
+        <!--经度列-->
+        <div>
+            <div class="titDiv">经度列：</div>
+            <div>
+                <select data-dojo-attach-point="grid_LonValue">
+                </select>
+            </div>
+        </div>
+        <!--纬度列-->
+        <div>
+            <div class="titDiv">纬度列：</div>
+            <div>
+                <select data-dojo-attach-point="grid_LatValue">
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--几个公共的部分-->
+    <div>
+        <!--值列-->
+        <div id="selectValue_value" data-dojo-attach-point="selectValue_value" style="display: block">
+            <div class="titDiv">${nls.valueList}</div>
+            <div>
+                <select data-dojo-attach-point="selectValue_select" data-dojo-attach-event="change:changeSelectValue">
+                </select>
+            </div>
+        </div>
+        <!--值类型列-->
+        <div id="value_list" style="display:none">
+            <div>
+                <label class="titDiv">值类型列：</label>
+            </div>
+            <div class="conDiv_weight">
+                <input type="radio" name="value_type" id="normal_value" data-dojo-attach-point="normal_value" checked
+                       data-dojo-attach-event="click:choose_value_list"><label>普通</label>
+                <input type="radio" name="value_type" id="list_value" data-dojo-attach-point="list_value"
+                       data-dojo-attach-event="click:choose_value_list"><label>枚举</label>
+                <input type="radio" name="value_type" id="muilt_value" data-dojo-attach-point="muilt_value"
+                       data-dojo-attach-event="click:choose_value_list"><label>数值</label>
+            </div>
+        </div>
+        <!--枚举里里面的分段方法-->
+        <div id="list_list" style="display: none">
+            <div>
+                <label class="titDiv">分段方法：</label>
+            </div>
+            <div class="conDiv_weight">
+                <input type="radio" name="subsection_way" id="pareto_principle"
+                       data-dojo-attach-point="pareto_principle" checked
+                       data-dojo-attach-event=""><label>二八法</label>
+                <input type="radio" name="subsection_way" id="five_formal" data-dojo-attach-point="five_formal"
+                       data-dojo-attach-event=""><label>五段法</label>
+            </div>
+        </div>
+        <!--是否添加标注-->
+        <div id="add_mark_label" style="display:none">
+            <div>
+                <label class="titDiv">是否添加标注：</label>
+            </div>
+            <div class="conDiv_weight">
+                <input type="checkbox" id="addLabelBtn" data-dojo-attach-point="addLabelBtn"
+                       data-dojo-attach-event="">
+            </div>
+        </div>
+        <!--是否导出详表-->
+        <div id="export_or_not" style="display: none">
+            <div>
+                <label class="titDiv">导出详表：</label>
+            </div>
+            <div class="conDiv_weight">
+                <input type="checkbox" id="detailedBtn" data-dojo-attach-point="detailedBtn"
+                       data-dojo-attach-event="">
+            </div>
+        </div>
+        <!--运算列-->
+        <div id="count_value" style="display: none">
+            <div>
+                <label class="titDiv">运算：</label>
+            </div>
+            <div class="conDiv_weight">
+                <input type="radio" name="math_type" id="math_calculate" data-dojo-attach-point="math_calculate" checked
+                       data-dojo-attach-event=""><label>计数</label>
+                <input type="radio" name="math_type" id="math_count" data-dojo-attach-point="taisen_pic"
+                       data-dojo-attach-event=""><label>求和</label>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tdClearButton" style="display: none" nowrap>
+        <div class="clear-CSVresult" data-dojo-attach-point="clearResultsBtn"
+             data-dojo-attach-event="click:clearCSVResults">${nls.clearResults}
+        </div>
+    </div>
+    <div class="tdDownloadButton" nowrap>
+        <div class="download-CSVresult" data-dojo-attach-point="downloadResultsBtn"
+             data-dojo-attach-event="click:downloadCSVResults">${nls.downloadResults}
+        </div>
+    </div>
+    <form data-dojo-attach-point="inputForm">
+        <div class="divCheckPlot">
+            <div>
+                <label style="display: none;color: #FF0000"
+                       data-dojo-attach-point="watchOut">${nls.watchOut}</label>
+                <label style="display: none;color: #FF0000"
+                       data-dojo-attach-point="warnOut">${nls.warnOut}</label>
+            </div>
+        </div>
+        <table data-dojo-attach-point="actionButtonsContainer" cellspacing="0" class="tblActionContainer">
+            <tr>
+                <td style="width:25%" class="tdCSVButton">
+                    <input type="file" id="csvFileInput" data-dojo-attach-point="csvFileInput" style="display: none"
+                           data-dojo-attach-event="change:fileSelected" accept=".csv,.xls,.xlsx,.xlt,.xltx,.xlsm,.kml">
+
+                    <div class="jimu-btn" data-dojo-attach-point="showFileDialogBtn"
+                         data-dojo-attach-event="click:showFileDialog">${nls.selectCSV}
+                    </div>
+                </td>
+                <td style="width:25%" class="tdCSVButton">
+                <input type="button" id="createMapRenderer">
+                <div class="jimu-btn" data-dojo-attach-point="createMapRenderer"
+                     style="display: inline-block;"
+                     data-dojo-attach-event="click:create_MapRenderer">创建图层
+                </div>
+            </td>
+                <td style="width:10%" class="tdCSVButton">
+                    <input type="button" id="clearHeatmapRenderer">
+                    <!--<div class="jimu-btn jimu-state-disabled" data-dojo-attach-point="clearHeatmapRenderer" data-dojo-attach-event="click:clear_HeatmapRenderer">${nls.clearHeatmapRenderer}</div>-->
+                    <div class="jimu-btn jimu-state-disabled" data-dojo-attach-point="clearHeatmapRenderer"
+                         data-dojo-attach-event="click:clearCSVResults">${nls.clearHeatmapRenderer}
+                    </div>
+                </td>
+                <td style="width:10%;display:none;" class="tdCSVButton">
+                    <input type="button" id="createNormalRenderer">
+                    <!--<div class="jimu-btn jimu-state-disabled" data-dojo-attach-point="clearHeatmapRenderer" data-dojo-attach-event="click:clear_HeatmapRenderer">${nls.clearHeatmapRenderer}</div>-->
+                    <div class="jimu-btn jimu-state-disabled" data-dojo-attach-point="createNormalRenderer"
+                         data-dojo-attach-event="click:createNormalRenderer">${nls.createNormalRenderer}
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div data-dojo-attach-point="results" class="hide">
+        <div class="results-header">${nls.messages}</div>
+        <table class="widgets-results-table" data-dojo-attach-point="widgetsResultsTable" cellspacing="0">
+            <tbody data-dojo-attach-point="widgetsResultsTableBody">
+            <tr class="controls">
+                <td class="tdProcessing">
+                    <div data-dojo-attach-point="resultsLoadingImage" id="resultsLoadingImage"
+                         class="status processing"/>
+                </td>
+                <td>
+                    <div class="result-text" data-dojo-attach-point="resultsLoading">${nls.loadingCSV}</div>
+                </td>
+            </tr>
+            <tr class="controls">
+                <td class="tdProcessing">
+                    <div data-dojo-attach-point="resultsPlottingImage" id="resultsPlottingImage"
+                         class="status processing"/>
+                </td>
+                <td>
+                    <div class="result-text" data-dojo-attach-point="resultsPlotting">${nls.plottingRows}</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="errorLink" data-dojo-attach-point="enrichErrors"
+             data-dojo-attach-event="click:showErrorTable"></div>
+        <div class="hide errorList" id="enrichErrorsList" data-dojo-attach-point="enrichErrorsList"></div>
+    </div>
+    <div id="templatePickerDiv"></div>
+    <div data-dojo-attach-point="heatmapControl" class="hide blurInfo">
+        <p>${nls.BlurRadius} : <span id="blurValue">10</span></p>
+        <input id="blurControl" data-dojo-attach-point="blur" type="range" max=30 min=0 value=10 step=1/>
+
+        <p>${nls.MaxValue} : <span id="maxValue">100</span></p>
+        <input id="maxControl" data-dojo-attach-point="max" type="range" max=500 min=0 value=100 step=1/>
+
+        <p>${nls.MinValue} : <span id="minValue">0</span></p>
+        <input id="minControl" data-dojo-attach-point="min" type="range" max=500 min=0 value=0 step=1/>
+        <div class="dropdown">
+            <span>${nls.Color} :<div data-dojo-attach-point="color" style="display: inline-block;" class="grad1"></div></span>
+            <div class="dropdown-content">
+                <div class="grad1" data-dojo-attach-event="click:setHeatMapColor"></div>
+                <div class="grad2" data-dojo-attach-event="click:setHeatMapColor"></div>
+                <div class="grad3" data-dojo-attach-event="click:setHeatMapColor"></div>
+            </div>
+        </div>
+    </div>
+    <div data-dojo-attach-point="loading" data-dojo-type="jimu/dijit/LoadingIndicator"
+         data-dojo-props='hidden:true'></div>
+</div>

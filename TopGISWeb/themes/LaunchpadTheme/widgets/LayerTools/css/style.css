@@ -1,0 +1,300 @@
+body,
+div,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+table,
+td,
+img,
+dl,
+dt,
+dd,
+th {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #303030;
+  font: normal 12px/24px "微软雅黑", Verdana, Arial, Tahoma;
+}
+
+/**定义HTML5 css3 全局样式**/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+i,
+em {
+  font-weight: normal;
+  font-style: normal
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+select,
+input,
+button,
+img,
+select {
+  vertical-align: middle;
+}
+
+a {
+  outline: none
+}
+
+/* for firefox */
+a {
+  blr: expression(this.onFocus=this.blur());
+  outline: none;
+}
+
+/*支持IE*/
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #303030;
+}
+
+a:visited {
+  color: #444444;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #ef7330;
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ctsTask {
+  display: block;
+  width: 99.99%;
+  /*overflow: auto;*/
+  zoom: 1;
+  margin: 0 auto;
+  padding: 5px 0;
+  clear: both;
+}
+
+.ctsTask .titDiv {
+  display: inline-block;
+  width: 80px;
+  height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 4px;
+  float: left;
+}
+
+.ctsTask .titDiv i {
+  color: #f00;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+.ctsTask .conDiv {
+  line-height: 24px;
+  margin: 0 0 0 85px;
+}
+
+.ctsTask .conDiv label {
+  padding-right: 10px;
+}
+
+.ctsTask .conDiv input[type="text"] {
+  width: 85%;
+  height: 26px;
+  border: 1px solid #d9dee2;
+  border-radius: 2px;
+  line-height: 26px;
+  padding: 0 10px;
+  color: #828d9a;
+  font-size: 12px;
+}
+
+.ctsTask .conDiv label input[type="radio"],
+.ctsTask .conDiv label input[type="checkbox"] {
+  margin-right: 2px;
+}
+
+#autocomplete {
+  width: 228px !important;
+  height: 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #d9dee2 !important;
+  border-radius: 2px;
+  background: #FFFFFF;
+}
+
+ul.styleSel li .blueBg {
+  background: #3482ff;
+}
+
+ul.styleSel li .greenBg {
+  background: #7BBD00;
+}
+
+ul.styleSel li .yellowBg {
+  background: #fcb710;
+}
+
+ul.styleSel li .redBg {
+  background: #FF5722;
+}
+
+ul.styleSel li .lightBlueBg {
+  background: #00c8e0;
+}
+
+ul.styleSel li .purpleBg {
+  background: #c143f5;
+}
+
+ul.styleSel li .orangeBg {
+  background: #ff8d00;
+}
+
+ul.styleSel li .brownBg {
+  background: #9d5d0f;
+}
+
+ul.styleSel li .bpBg {
+  background: #786BFF;
+}
+
+ul.styleSel li {
+  float: left;
+  margin-right: 4px;
+}
+
+ul.styleSel li a {
+  border: 1px solid #fff;
+  display: block;
+  opacity: 0.5;
+}
+
+ul.styleSel li a:hover {
+  opacity: 1;
+}
+
+ul.styleSel li a span {
+  display: block;
+  height: 24px;
+  width: 24px;
+  margin: 1px;
+}
+
+ul.styleSel .blue a:hover,
+ul.styleSel .blue a.selA {
+  border-color: #3482ff;
+}
+
+ul.styleSel .green a:hover,
+ul.styleSel .green a.selA {
+  border-color: #7BBD00;
+}
+
+ul.styleSel .yellow a:hover,
+ul.styleSel .yellow a.selA {
+  border-color: #fcb710;
+}
+
+ul.styleSel .red a:hover,
+ul.styleSel .red a.selA {
+  border-color: #FF5722;
+}
+
+ul.styleSel .purple a:hover,
+ul.styleSel .purple a.selA {
+  border-color: #c143f5;
+}
+
+ul.styleSel .orange a:hover,
+ul.styleSel .orange a.selA {
+  border-color: #9d5d0f;
+}
+
+ul.styleSel .bp a:hover,
+ul.styleSel .bp a.selA {
+  border-color: #786BFF;
+}
+
+/********checkbox 开始 ***********/
+.attrListWrap {
+  width: 400px;
+  position: fixed;
+  left: 350px;
+  top: 0
+}
+
+.attrListWrap>.attrRow {
+  background: #fff;
+  padding: 0 0 5px 10px;
+}
+
+.attrListWrap .attrNm {
+  font-size: 14px;
+}
+
+.inlineRadios {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inlineRadios>.checkbox-wrap {
+  margin-right: 10px;
+}
+
+.checkbox-wrap>.checkbox-input {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.checkbox-wrap>.checkbox-label {
+  font-size: 12px;
+}

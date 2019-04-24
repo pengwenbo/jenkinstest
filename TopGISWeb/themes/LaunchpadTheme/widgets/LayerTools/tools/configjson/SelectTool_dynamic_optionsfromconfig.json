@@ -1,0 +1,14 @@
+﻿{
+  "type": "SelectTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamic",
+    "table_pre": "gis_app_measured_data201705",
+    "label": "月份",
+    "optionshtml": "<option  value='201711'  >201711</option><option  value='201710' >201710</option><option  value='201709' >201709</option><option  value='201708' >201708</option><option  value='201707' >201707</option><option  value='201706' >201706</option><option  value='201705' >201705</option><option  value='201704' >201704</option><option  value='201703' >201703</option><option  value='201702' >201702</option><option  value='201701' >201701</option><option  value='201612' >201612</option><option  value='201611' >201611</option><option  value='201610' >201610</option>",
+    "workspaceId": "AppOracle",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

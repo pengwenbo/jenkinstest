@@ -1,0 +1,12 @@
+﻿{
+  "type": "SimpleRendererTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamicrender",
+    "geometryType":"polygon", 
+    "label": "渲染设置",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 2
+}

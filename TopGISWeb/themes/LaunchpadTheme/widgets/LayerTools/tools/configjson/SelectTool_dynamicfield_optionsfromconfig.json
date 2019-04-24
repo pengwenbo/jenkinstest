@@ -1,0 +1,12 @@
+﻿{
+  "type": "SelectTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamicfield",
+    "label": "指标选择",
+    "optionshtml": "<option  value=\"{'field':'WORK_FRQBAND','rendererType':'unique', 'fromColor':'#33FF22', 'toColor':'#FF2233'}\" >工作频段</option><option  value=\"{'field':'IsWeakover','rendererType':'unique10', 'geometryType':'polygon'}\">是否弱覆盖</option><option  value=\"{'field':'HEIGHT','rendererType':'classbreak', 'fromColor':'#00FF00', 'toColor':'#FF0000'}\">高度</option><option  value=\"{'field':'SCENE_NAME','rendererType':'unique'}\">场景</option>",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

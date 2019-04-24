@@ -1,0 +1,33 @@
+﻿{
+  "type": "InputTextTool",
+  "visible": "true",
+  "options": {
+    "optionType": "highlight",
+     "highlightrenderer": {
+    "type": "simple",
+    "label": "",
+    "description": "",
+    "symbol": {
+      "color": [210,105,30,191],
+      "size": 26,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriSMS",
+      "style": "esriSMSCircle",
+      "outline": {
+        "color": [0,0,128,255],
+        "width": 0,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    }
+  },
+    "label": "形式选择",
+    "textValue": "STATUS = 1",
+    "placeholder": "请输入表名...",
+    "orderid": 1,
+    "groupid": 0
+  },
+  "toolid": 0
+}

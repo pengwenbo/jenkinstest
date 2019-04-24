@@ -1,0 +1,27 @@
+<div style="width:100%;height:100%;overflow-y:auto;">
+    <div>
+        <table data-dojo-attach-point="actionButtonsContainer" cellspacing="0" class="tblActionContainer">
+            <tr>
+                <td style="padding-left: 50px;width:100px" class="tdCSVButton">
+                    <input type="file" id="csvFileInput" data-dojo-attach-point="csvFileInput" style="display: none"
+                           data-dojo-attach-event="change:fileSelected" accept=".csv,.xls,.xlsx,.xlt,.xltx,.xlsm">
+
+                    <div class="jimu-btn" data-dojo-attach-point="showFileDialogBtn"
+                         data-dojo-attach-event="click:showFileDialog">${nls.selectCSV}
+                    </div>
+                </td>
+                <td style="padding-left: 20px;width:150px;display: none" class="tdCSVButton" data-dojo-attach-point="showFZBtnDiv">
+                    <div class="jimu-btn" data-dojo-attach-point="showFZBtn"
+                         style="display: inline-block;"
+                         data-dojo-attach-event="click:showFangzhen">仿真对比
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div data-dojo-type="dijit.Dialog" title="Pickup Color"
+         data-dojo-attach-point="dialogClickInfo"
+         data-dojo-props="closable:true" id="dialogClickInfo">
+        aaaaaaaaaaa
+    </div>
+</div>

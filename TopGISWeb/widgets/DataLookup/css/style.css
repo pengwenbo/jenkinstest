@@ -1,0 +1,274 @@
+
+.solutions-widget-datalookup .widgetDescription {
+    text-align: left;
+    color: #66696C;
+    font-family: proxima-nova;
+    font-style: normal;
+    margin: 0px 0px 20px 0px;
+    font-size: 14px;
+}
+
+.solutions-widget-datalookup .uploadBox {
+    margin: 30px 0 15px 0;
+    float: left;
+}
+
+.solutions-widget-datalookup .hide {
+    display: none;
+}
+
+.solutions-widget-datalookup .blurInfo input {
+    width: 80%;
+}
+
+.solutions-widget-datalookup .grad1 {
+    height: 20px;
+    width: 100px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #0000FF, #0000F6, #0000F9, #0000F5, #0000F7, #0000F8, #0000F5, #0000F6, #0000F5, #0000F6, #0000F7, #0000F5, #0000F6, #0000F5, #0000F5, #0000F6, #0000F5, #0000F6, #0000F5, #0000F5, #0000F6, #0000F4, #0000F5, #0000F6, #0006F6, #000CF6, #0013F6, #0019F6, #0020F6, #0026F6, #002CF6, #0033F6, #0039F6, #0040F6, #0046F6, #004CF6, #0053F6, #0059F6, #0060F6, #0066F6, #006CF6, #0073F6, #0079F6, #0080F6, #0086F6, #008CF6, #0093F6, #0099F6, #01A0F6, #00A3F5, #00A6F5, #00A9F4, #00ACF4, #00AFF4, #00B2F3, #00B5F3, #00B8F2, #00BBF2, #00BEF2, #00C1F1, #00C4F1, #00C7F0, #00CAF0, #00CDF0, #00D0EF, #00D3EF, #00D6EE, #00D9EE, #00DCEE, #00DFED, #00E2ED, #00E5EC, #00E8EC, #00ECEC, #00ECE2, #00EDD9, #00EECF, #00EFC6, #00EFBC, #00F0B3, #00F1A9, #00F2A0, #00F297, #00F38D, #00F484, #00F57A, #00F571, #00F667, #00F75E, #00F854, #00F84B, #00F942, #00FA38, #00FB2F, #00FB25, #00FC1C, #00FD12, #00FE09, #00FF00, #0AFF00, #14FF00, #1EFF00, #28FF00, #33FF00, #3DFF00, #47FF00, #51FF00, #5BFF00, #66FF00, #70FF00, #7AFF00, #84FF00, #8EFF00, #99FF00, #A3FF00, #ADFF00, #B7FF00, #C1FF00, #CCFF00, #D6FF00, #E0FF00, #EAFF00, #F4FF00, #FFFF00, #FEFC00, #FDF900, #FCF700, #FBF400, #FAF200, #F9EF00, #F8ED00, #F7EA00, #F6E800, #F5E500, #F4E300, #F3E000, #F2DE00, #F1DB00, #F0D900, #EFD600, #EED400, #EDD100, #ECCF00, #EBCC00, #EACA00, #E9C700, #E8C500, #E7C200, #E7C000, #E7BE00, #E8BC00, #E9BA00, #EAB800, #EBB600, #ECB400, #EDB200, #EEB000, #EFAE00, #F0AC00, #F1AA00, #F2A800, #F3A700, #F4A500, #F5A300, #F6A100, #F79F00, #F89D00, #F99B00, #FA9900, #FB9700, #FC9500, #FD9300, #FE9100, #FF9000, #FF8A00, #FF8400, #FF7E00, #FF7800, #FF7300, #FF6D00, #FF6700, #FF6100, #FF5C00, #FF5600, #FF5000, #FF4A00, #FF4500, #FF3F00, #FF3900, #FF3300, #FF2E00, #FF2800, #FF2200, #FF1C00, #FF1700, #FF1100, #FF0B00, #FF0500, #FF0000);
+}
+
+.solutions-widget-datalookup .grad2 {
+    height: 20px;
+    width: 100px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #00CDAC, #02AAB0, #DA22FF, #9733EE, #61045F, #AA076B);
+}
+
+.solutions-widget-datalookup .grad3 {
+    height: 20px;
+    width: 100px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #12FFF7, #26D0CE, #B3FFAB, #ADD100, #7B920A, #1A2980)
+}
+
+.solutions-widget-datalookup .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.solutions-widget-datalookup .dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    padding: 12px 16px;
+}
+
+.solutions-widget-datalookup .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*
+input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+*/
+/*普通图图表
+.solutions-widget-datalookup #NormalRenderTable table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.solutions-widget-datalookup #NormalRenderTable  td{
+    width:50%;
+}
+*/
+.solutions-widget-datalookup .fileInputNonHTML5 {
+    position: fixed;
+}
+
+.solutions-widget-datalookup .fileInputHTML5 {
+    position: fixed;
+    width: 0px;
+    height: 0px;
+}
+
+.solutions-widget-datalookup .divCheckPlot {
+    color: #686868;
+    font-family: proxima-nova;
+    font-style: normal;
+    font-size: 12px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.solutions-widget-datalookup .plotChoice {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35%;
+}
+
+.solutions-widget-datalookup .projectionChoice {
+    text-align: right;
+    width: 65%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.solutions-widget-datalookup .labelPad {
+    padding-right: 5px;
+}
+
+/*Results Table*/
+.solutions-widget-datalookup .widgets-results-table {
+    margin: 1px;
+
+}
+
+.solutions-widget-datalookup .tblActionContainer {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.solutions-widget-datalookup .optionStyle {
+    padding-bottom: 5px;
+}
+
+.solutions-widget-datalookup .tdCSVButton {
+    width: 100%;
+}
+
+.solutions-widget-datalookup .tdDownloadButton {
+    width: 25%;
+}
+
+.solutions-widget-datalookup .tdClearButton {
+    width: 25%;
+}
+
+.solutions-widget-datalookup .clear-CSVresult {
+    color: #51b1fe;
+    font-family: proxima-nova;
+    font-style: normal;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.solutions-widget-datalookup .download-CSVresult {
+    color: #51b1fe;
+    font-family: proxima-nova;
+    font-style: normal;
+    margin: 0px 15px 0px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.solutions-widget-datalookup .controls {
+    width: 100%;
+    height: 42px;
+    vertical-align: middle;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.solutions-widget-datalookup .status {
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 20px;
+
+}
+
+.solutions-widget-datalookup .processing {
+    content: url("./images/processing.gif");
+}
+
+.solutions-widget-datalookup .processing:before {
+    content: url("./images/processing.gif");
+}
+
+.solutions-widget-datalookup .tdProcessing {
+    width: 30px;
+    text-align: left;
+}
+
+.solutions-widget-datalookup .complete {
+    content: url("./images/complete.png");
+}
+
+.solutions-widget-datalookup .complete:before {
+    content: url("./images/complete.png");
+}
+
+.solutions-widget-datalookup .error {
+    content: url("./images/x_symbol_red.png");
+}
+
+.solutions-widget-datalookup .error:before {
+    content: url("./images/x_symbol_red.png");
+}
+
+.solutions-widget-datalookup .bypass {
+    content: url("");
+}
+
+.solutions-widget-datalookup .results-header {
+    color: #66696C;
+    font-family: proxima-nova;
+    font-style: Semibold;
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+
+.solutions-widget-datalookup .result-text {
+    color: #686868;
+    font-family: proxima-nova;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.solutions-widget-datalookup .errorLink {
+    color: #0000FF;
+    cursor: pointer;
+    font-family: proxima-nova;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.solutions-widget-datalookup .errorList {
+    color: #686868;
+    font-family: proxima-nova;
+    font-style: normal;
+    font-size: 12px;
+}
+
+/*新定义样式*/
+.titDiv {
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 4px;
+    float: left;
+}
+
+.conDiv_weight {
+    line-height: 24px;
+    margin: 0 0 0 85px;
+}
+
+.conDiv_weight label {
+    padding-right: 10px;
+}
+
+.conDiv_weight input[type="text"] {
+    width: 85%;
+    height: 26px;
+    border: 1px solid #d9dee2;
+    border-radius: 2px;
+    line-height: 26px;
+    padding: 0 10px;
+    color: #828d9a;
+    font-size: 12px;
+}
+
+.conDiv_weight label input[type="radio"], .ctsTask .conDiv_weight label input[type="checkbox"] {
+    margin-right: 2px;
+}

@@ -1,0 +1,60 @@
+<div class="spring">
+    <div class="content">
+        <div class="title">
+            <span>断站影响分析</span>
+            <span data-dojo-attach-point="closeBtn"  data-dojo-attach-event="click:closeWidget"><img src="./widgets/StationBreak/images/del.png"></img></span>
+        </div>
+        <div class="grid-list">
+            <ul>
+                <li><span class="num" data-dojo-attach-point="gridNumSpan" >1000</span><span>删格数</span></li>
+                <li><span class="num two" ><label data-dojo-attach-point="regionAreaSpan">250000</label>m<sup>2</sup></span></spam><span>区域面积</span></li>
+                <li><span class="num" data-dojo-attach-point="g24RateSpan">30/60</span><span>2/4G小区占比</span></li>
+                <li><span class="num" data-dojo-attach-point="cfBreakSpan">40</span><span>重复中断小区数</span></li>
+            </ul>
+        </div>
+        <div id="echarts-pie"></div>
+        <div class="business-list">
+            <p>断站小区上周业务统计</p>
+            <ul>
+                <li>采样点数</li>
+                <li data-dojo-attach-point="pointNumSpan">200000</li>
+                <li>日均用户数</li>
+                <li data-dojo-attach-point="userNumSpan">2000</li>
+                <li>流量</li>
+                <li data-dojo-attach-point="flowTotalSpan">23.1GB</li>
+                <li>话务量</li>
+                <li data-dojo-attach-point="hwTotallSpan">21.5Erl</li>
+            </ul>
+        </div>
+        <div class="rate-list">
+            <p>周边业务增长最高小区感知</p>
+            <ul>
+                <li>掉线率</li>
+                <li data-dojo-attach-point="dropRateSpan">0.02%</li>
+                <li>接通率</li>
+                <li data-dojo-attach-point="connectRateSpan">99.98%</li>
+                <li>感知速率</li>
+                <li data-dojo-attach-point="gzRateSpan">300KBps</li>
+            </ul>
+        </div>
+        <div class="scheme-list">
+            <p>应急预案</p>
+            <dl>
+                <dd>参数预案</dd>
+                <dt ><label data-dojo-attach-point="canshuSpan">可抬高XXXXXXXX XXXXXX XXXXXX等小区功率</label><img  data-dojo-attach-event="click:exportDetailExcel1"   src="./widgets/StationBreak/images/download.png"></dt>
+            </dl>
+            <dl>
+                <dd>天馈硬调整预案</dd>
+                <dt ><label data-dojo-attach-point="tkytzSpan">可调整XXXXXXXX XXXXXX XXXXXX等小区电调天线倾角</label><img   data-dojo-attach-event="click:exportDetailExcel2"  src="./widgets/StationBreak/images/download.png"></dt>
+            </dl>
+            <dl>
+                <dd>天馈软调整预案</dd>
+                <dt><label data-dojo-attach-point="tkrtzSpan">可调整XXXXXXXX XXXXXX XXXXXX等小区电调天线倾角</label><img   data-dojo-attach-event="click:exportDetailExcel3"   src="./widgets/StationBreak/images/download.png"></dt>
+            </dl>
+            <dl>
+                <dd class="border-line">应急车开通预案</dd>
+                <dt class="border-line" data-dojo-attach-point="yjcSpan">现有网络资源已无法承载业务,需开通应急车</dt>
+            </dl>
+        </div>
+    </div>
+</div>

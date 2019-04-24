@@ -1,0 +1,12 @@
+﻿{
+  "type": "MutiRadioBtnTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "规划站阶段",
+    "radios": [ {"label": "待建","value": "STATUS = 1" ,"checked": true },{"label": "完成","value": "STATUS = 2" },{"label": "立项","value": "STTUS = 3" } ],
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

@@ -1,0 +1,12 @@
+﻿{
+  "type": "MutiCheckBoxTool",
+  "visible": "true",
+  "options": {
+    "optionType": "query",
+    "label": "规划站阶段",
+    "checkboxes": [ {"label": "待建","value": "STATUS = 1","orderid": 0,"checked": true },{"label": "完成","value": "STATUS = 2","orderid": 1  },{"label": "立项","value": "STTUS = 3","orderid": 2  } ],
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}

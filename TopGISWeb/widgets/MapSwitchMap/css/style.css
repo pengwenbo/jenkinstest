@@ -1,0 +1,35 @@
+.jimu-widget-Startlocation {
+    border-radius: 5px;
+    background-color: #ccc;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*z-index: 9999;*/
+}
+
+.jimu-widget-Startlocation.onCenter {
+    background-color: #000;
+}
+
+.jimu-widget-Startlocation .place-holder {
+    position: fixed;
+    right: 20px;
+    bottom: 75px;
+}
+
+.jimu-widget-Startlocation a {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    background: #fff url('../images/2.png') center center no-repeat;
+}
+
+.jimu-widget-Startlocation a:hover {
+    background: #e3e3e3 url('../images/2.png') center center no-repeat;
+}
+
+.jimu-widget-Startlocation a.on {
+    background: #fff url('../images/2_c.png') center center no-repeat;
+}

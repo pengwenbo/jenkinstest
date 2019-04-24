@@ -1,0 +1,15 @@
+﻿{
+  "type": "InputTextTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamic",
+    "label": "形式选择",
+    "table_pre": "GIS_OBJECT_GSM",
+    "textValue": "GIS_OBJECT_GSMSX20171204",
+    "placeholder": "请输入表名...",
+    "workspaceId": "sde238",
+    "orderid": 1,
+    "groupid": 0
+  },
+  "toolid": 0
+}

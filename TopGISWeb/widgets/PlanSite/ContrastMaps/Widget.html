@@ -1,0 +1,48 @@
+<div class="ConstrastMaps">
+
+    <div id="fzMap" style="width: 100%;height: 100%">
+
+    </div>
+    <div style="position: absolute;top: 50px;left: 10px;text-align:center;font-size: 15px;font-weight: bold;">
+        <div id="cMap_time" class="toggleButton toggleButton-selected" data-dojo-attach-point="cMap_time">现网状况
+        </div>
+    </div>
+    <div style="position: absolute;top: 50px;left: -150px;text-align:center;font-size: 15px;font-weight: bold;">
+        <div id="Map_time" class="toggleButton toggleButton-selected" data-dojo-attach-point="Map_time">
+            仿真结果
+        </div>
+    </div>
+
+    <div style="position: absolute;top: 42px;left: 230px;text-align:center;font-size: 15px;font-weight: bold;">
+        <div id="PlanSiteName" class="toggleTitle title-selected" data-dojo-attach-point="PlanSiteName">
+            儋州白马井官方村郑屋小地栏
+        </div>
+    </div>
+
+    <div style="position: absolute;bottom: 80px;text-align:center;font-size: 15px;font-weight: bold;" id="CurrentStatusDiv">
+        <div id="CurrentStatus" class="statusDiv" data-dojo-attach-point="CurrentStatus">
+              栅格数目：100&nbsp;
+              平均电平：-100&nbsp;
+              弱覆盖栅格数：20
+        </div>
+    </div>
+
+    <div style="position: absolute;bottom: 80px;text-align:center;font-size: 15px;font-weight: bold;" id="FangZhenStatusDiv">
+        <div id="FangZhenStatus" class="statusDiv2" data-dojo-attach-point="FangZhenStatus">
+            栅格数目：100&nbsp;
+            平均电平：-90&nbsp;
+            弱覆盖栅格数：5
+        </div>
+    </div>
+    <img id="closeContrast" title="关闭多图对比" style="position: absolute;bottom: 0;cursor:pointer;z-index: 102;"
+         data-dojo-attach-event="click:_closeEvent" src="widgets/PlanSite/images/v_close.png"/>
+
+    <img id="previousPlanSite" title="上一个" style="position: absolute;bottom: 400px;cursor:pointer;z-index: 102;"
+         data-dojo-attach-event="click:_previousEvent" src="widgets/PlanSite/images/last.png"/>
+
+    <img id="nextPlanSite" title="下一个" style="position: absolute;bottom: 400px;cursor:pointer;z-index: 102;"
+         data-dojo-attach-event="click:_nextEvent" src="widgets/PlanSite/images/next.png"/>
+    <div class="leftShape">
+    </div>
+</div>
+

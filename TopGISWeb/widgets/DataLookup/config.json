@@ -1,0 +1,278 @@
+{
+  "latFields": [
+    "LAT",
+    "Lat",
+    "lat",
+    "latitude",
+    "y",
+    "ycenter",
+    "point_y"
+  ],
+  "longFields": [
+    "LON",
+    "Long",
+    "lon",
+    "long",
+    "longitude",
+    "x",
+    "xcenter",
+    "point_x"
+  ],
+  "disFields": [
+    "CI",
+    "ci"
+  ],
+  "polt_url": {
+    "GSM": "../proxy_to_92/enterprise_gis/arcgis/rest/services/DayCell/GSM_SX_DAY/MapServer/0",
+    "TD": "../proxy_to_92/enterprise_gis/arcgis/rest/services/DayCell/TD_SX_DAY/MapServer/0",
+    "LTE": "../proxy_to_92/enterprise_gis/arcgis/rest/services/DayCell/LTE_SX_DAY/MapServer/0"
+  },
+  "query_value":{
+    "GSM":"CITY_CI",
+    "TD":"CITY_CI",
+    "LTE":"CI"
+  },
+  "classification": [
+    "classification",
+    "Classification",
+    "Type"
+  ],
+  "infoTemplates": [
+    {
+      "title": "聚合图",
+      "content": "LAT: ${LAT}<br>LON:${LON}<br>Title: ${Title}<br>值: ${Value}",
+      "width": 300,
+      "height": 300
+    }
+  ],
+  "grad1":["rgba(0,0,0,0)", "#0000FF", "#0000F6", "#0000F9", "#0000F5", "#0000F7", "#0000F8", "#0000F5", "#0000F6", "#0000F5", "#0000F6", "#0000F7", "#0000F5", "#0000F6", "#0000F5", "#0000F5", "#0000F6", "#0000F5", "#0000F6", "#0000F5", "#0000F5", "#0000F6", "#0000F4", "#0000F5", "#0000F6", "#0006F6", "#000CF6", "#0013F6", "#0019F6", "#0020F6", "#0026F6", "#002CF6", "#0033F6", "#0039F6", "#0040F6", "#0046F6", "#004CF6", "#0053F6", "#0059F6", "#0060F6", "#0066F6", "#006CF6", "#0073F6", "#0079F6", "#0080F6", "#0086F6", "#008CF6", "#0093F6", "#0099F6", "#01A0F6", "#00A3F5", "#00A6F5", "#00A9F4", "#00ACF4", "#00AFF4", "#00B2F3", "#00B5F3", "#00B8F2", "#00BBF2", "#00BEF2", "#00C1F1", "#00C4F1", "#00C7F0", "#00CAF0", "#00CDF0", "#00D0EF", "#00D3EF", "#00D6EE", "#00D9EE", "#00DCEE", "#00DFED", "#00E2ED", "#00E5EC", "#00E8EC", "#00ECEC", "#00ECE2", "#00EDD9", "#00EECF", "#00EFC6", "#00EFBC", "#00F0B3", "#00F1A9", "#00F2A0", "#00F297", "#00F38D", "#00F484", "#00F57A", "#00F571", "#00F667", "#00F75E", "#00F854", "#00F84B", "#00F942", "#00FA38", "#00FB2F", "#00FB25", "#00FC1C", "#00FD12", "#00FE09", "#00FF00", "#0AFF00", "#14FF00", "#1EFF00", "#28FF00", "#33FF00", "#3DFF00", "#47FF00", "#51FF00", "#5BFF00", "#66FF00", "#70FF00", "#7AFF00", "#84FF00", "#8EFF00", "#99FF00", "#A3FF00", "#ADFF00", "#B7FF00", "#C1FF00", "#CCFF00", "#D6FF00", "#E0FF00", "#EAFF00", "#F4FF00", "#FFFF00", "#FEFC00", "#FDF900", "#FCF700", "#FBF400", "#FAF200", "#F9EF00", "#F8ED00", "#F7EA00", "#F6E800", "#F5E500", "#F4E300", "#F3E000", "#F2DE00", "#F1DB00", "#F0D900", "#EFD600", "#EED400", "#EDD100", "#ECCF00", "#EBCC00", "#EACA00", "#E9C700", "#E8C500", "#E7C200", "#E7C000", "#E7BE00", "#E8BC00", "#E9BA00", "#EAB800", "#EBB600", "#ECB400", "#EDB200", "#EEB000", "#EFAE00", "#F0AC00", "#F1AA00", "#F2A800", "#F3A700", "#F4A500", "#F5A300", "#F6A100", "#F79F00", "#F89D00", "#F99B00", "#FA9900", "#FB9700", "#FC9500", "#FD9300", "#FE9100", "#FF9000", "#FF8A00", "#FF8400", "#FF7E00", "#FF7800", "#FF7300", "#FF6D00", "#FF6700", "#FF6100", "#FF5C00", "#FF5600", "#FF5000", "#FF4A00", "#FF4500", "#FF3F00", "#FF3900", "#FF3300", "#FF2E00", "#FF2800", "#FF2200", "#FF1C00", "#FF1700", "#FF1100", "#FF0B00", "#FF0500", "#FF0000"],
+  "grad2":["rgba(0, 0, 0, 0)","#00CDAC", "#02AAB0", "#DA22FF", "#9733EE", "#61045F", "#AA076B"],
+  "grad3":["rgba(0, 0, 0, 0)", "#12FFF7", "#26D0CE", "#B3FFAB", "#ADD100", "#7B920A", "#1A2980"],
+  "valueOut": "Out",
+  "valueIn": "In",
+  "intersectField": "intersected",
+  "maxRowCount": "10000",
+  "cacheNumber": "500",
+  "SymbolWithin": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./images/location_green.png",
+    "imageData": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACH0lEQVRYR8WWT07bUBDGvwmxCWwaFpVKVrAocne5AeQG4QSUE8ANoCeAnqDlBMAJmt7Au1iwIKsEiUXNJgY7eKoXYim2Xt6/IGU2kZzxm9/3vZmRCSsOWnF9WAN8Tr+266gfAdwm0IEQwOAeQOEEk6sn/z60EWUM0OSd5mbWuADou6oAM24SPzmOaRCbgBgBfOFgp5bRNYC2yaHMPGAfnUeKBrp8LcC78o0/psXnCoZjL+nonNACtF6DcxCdlZXwcw6cvngvN+J5I2t0a8AlQJ9Kecw/huvRucoFPUAaxOWD+Tn30K7a+35NCCsQ8dDvbzkDtCZ7XeRr4u7ngq+GfiRtxO302yUBJ6X02tvhsH43dUoWSgek9itstc0XQNYADPwc+f1TmRqpA5o+sAYAEI+9ZLfa3bNpeQDQtGlENYC0B6bHhxkmx8XWE9vRQ/2XdFSX6YGZqn+KLi62XVn13AtjL9lS7QKTMfwN0JFuo8n/XzwxRb4WYLaGxd1aR+7xrm4dawFE1VYaOLigV68dw0Kyiwsm6o0BbF1gxu1ovd81uTOjKxAH2biQE3cevaj3oQDisO006BFoX3Uwg/+O/Gj6pWQSxg5MXciCgxqT+DZYGDbqrXqgqKhywVa9E4DKBVv1TgCLesFFvTOAzAUX9c4AVRdc1S8FMO+Cq/qlAAoXxK/N3Ffn12oPVF8WLohnpltPtjyWAjDZdLqclQP8BwEYBzAN3FugAAAAAElFTkSuQmCC",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "SymbolOutside": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./images/location_red.png",
+    "imageData": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACK0lEQVRYR8WWQW4TQRBFf41pm03A2SERR3gDnp1vQHwDcwLICZIbEE5AOAHkBAknSLjB7BzYOIqDxI6Js4HueArNeIzsUae7a7xwbyxZ5a73f/8qmbDhQxvuDzHAj+eqn0V4C6APor1CAPMFgCTKcPLyp0kkooIBxm209Zb6yETvnA0YZ607vd9NkYaABAGMnuEFNdUpQP2QSwFcsdaD+BeufPVegFz53yfqXNC87MlJa2oGPie8AKPd5hEB71eV8C0zDh/fmbP8+z9bakiEY4CeLtcx8CG+1kcuF7wAl7sqXb2Yb1mbftXe8pmSSm3auzbbtQG+dxpDpsbpiirmk3hirEG83FHHiOhguZ549ubVZFY4ZTtOB2z2u2yV1udAYgBk/Kl3Yw5tamwO+HIgBwCnranpVtNdTssYoLYkiE4AWwbml3MSzbC/2HrFdmzgs21U18rAXFXz98Mp5nLbraperm9N9bZrF3jHcNRRX4go3/3iw46JWVzmByjWcHMs7p4/lNZd3zr2AuSN67gQot47hgvV8y0ncyFEfTCA2AXG195ED0OeLegJCgCBC5xlg/jmPv+T4j3BAKULF0T02nUrM3+LJ2b+TyngyAB2Hu1RFJ07AQTqRRn4H8iOetAFqfp6AA4XJG8fvIhsdo8sLtRRX8uBIowWF+qorw1QnYi66tcDWHKhrvq1ABYu5J+Sua9mSrQHqj/Os1AABG49W6DXAghYdN6SjQP8A1EuCjCete5yAAAAAElFTkSuQmCC",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol1": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627024.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol2": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627025.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol3": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627026.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol4": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627027.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol5": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627028.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol6": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627029.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol7": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627030.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol8": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627031.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol9": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627032.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol10": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627033.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol11": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627034.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol12": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627035.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol13": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627036.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol14": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627037.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol15": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627037.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol16": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627038.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol17": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627039.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol18": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627040.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol19": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627041.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  },
+  "Symbol20": {
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "type": "esriPMS",
+    "url": "./widgets/DataLookup/images/627042.png",
+    "contentType": "image/png",
+    "width": 18,
+    "height": 18
+  }
+}

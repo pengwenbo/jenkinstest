@@ -1,0 +1,20 @@
+﻿{
+  "type": "RegionSelectTool",
+  "visible": "true",
+  "options": {
+    "label":"区域选择",
+    "optionType": "query",
+    "citylabel": "地市",
+    "cityfield": "CITY",
+    "cityoptionshtml": "<option  value='所有' >所有</option><option  value='福州' >福州</option><option  value='厦门'>厦门</option><option  value='龙岩'>龙岩</option><option  value='南平' >南平</option><option  value='莆田'  >莆田</option><option  value='宁德' >宁德</option><option  value='漳州'  >漳州</option><option  value='泉州' >泉州</option><option  value='三明' >三明</option>",
+    "countyfield": "COUNTY",
+    "countylabel": "区县",
+    "countyoptionsurl": "http://119.29.5.243:8088/GisNew/GetCounty?city={city}",
+    "gridfield": "GRID",
+    "gridlabel": "网格",
+    "gridoptionsurl": "http://119.29.5.243:8088/GisNew/GetGrid?city={city}&county={county}",
+    "groupid": 0,
+    "orderid": 0
+  },
+  "toolid": 0
+}

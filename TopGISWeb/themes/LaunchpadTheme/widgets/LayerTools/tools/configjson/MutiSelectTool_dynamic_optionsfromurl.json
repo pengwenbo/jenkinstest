@@ -1,0 +1,14 @@
+﻿{
+  "type": "MutiSelectTool",
+  "visible": "true",
+  "options": {
+    "optionType": "dynamic",
+    "table_pre":"GIS_OBJECT_LTE",
+    "label": "形式选择",
+    "optionsurl": "http://localhost:1877/api/getoptions?id=1",
+    "workspaceId": "MyWorkspace177",
+    "orderid": 0,
+    "groupid": 0
+  },
+  "toolid": 0
+}
